@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity"/>
-        <activity android:name=".MainUIActivity"></activity>
+        <activity android:name=".MainUIActivity"
+            android:theme="@style/AppTheme.">
+        </activity>
     </application>
 
 </manifest>

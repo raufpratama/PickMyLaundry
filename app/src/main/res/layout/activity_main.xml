@@ -66,7 +66,7 @@
         android:layout_centerHorizontal="true"
         android:onClick="prosesLogin"
         android:background="@drawable/buttonlogin"
-        android:textColor="@color/hijautosca"/>
+        android:textColor="@color/birugelap"/>
     
     <Button
         android:textColor="@color/putih"
