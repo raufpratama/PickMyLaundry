@@ -24,7 +24,7 @@ import com.android.volley.toolbox.Volley;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     EditText username, password;
     Button bt_login,bt_signup;
     ProgressDialog progressDialog;
@@ -53,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
                     pass = password.getText().toString();
                     //progressDialog.setMessage("Logging in");
                     //bgwk.execute(method, nama, pass);
-                    uw.execute(nama, pass);
+                    //uw.execute(nama, pass);
 
-                    /*StringRequest stringRequest = new StringRequest(Request.Method.POST, Constants.URL_LOGIN, new Response.Listener<String>() {
+                    StringRequest stringRequest = new StringRequest(Request.Method.POST, Constants.URL_LOGIN, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             progressDialog.dismiss();
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     };
                     RequestQueue requestQueue = Volley.newRequestQueue(this);
-                    requestQueue.add(stringRequest);*/
+                    requestQueue.add(stringRequest);
 
                 } else {
                     Toast.makeText(getApplicationContext(), "Silahkan isi form terlebih dahulu",Toast.LENGTH_LONG).show();
